@@ -1,6 +1,8 @@
 ﻿#B
 {
     padding-top: 60pt;
+    display: flex;
+    flex-direction: column;
 }
 *{
     margin: 0%;
@@ -21,6 +23,7 @@
 }
 #img img
 {
+    
     border: none;
     border-radius: 50%;
 }
