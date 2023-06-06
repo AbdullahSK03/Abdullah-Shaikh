@@ -55,11 +55,12 @@ p{
 }
 
 #info{
-    font-size: 2rem;
+    font-size: 1rem;
+    font-family: 'Caladea', serif;
 }
 footer{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Caladea', serif;
 }
 #foot{
     box-sizing: border-box;
@@ -115,4 +116,6 @@ a{
       opacity: 1;
     }
   }
-  
+  @media screen {
+    
+  }
