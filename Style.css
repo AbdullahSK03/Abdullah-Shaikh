@@ -81,8 +81,8 @@ footer {
 
 /* Animation CSS */
 .tracking-in-contract {
-    -webkit-animation: tracking-in-contract 1s ease-in-out forwards;
-    animation: tracking-in-contract 1s ease-in-out forwards;
+    -webkit-animation: tracking-in-contract 3s ease-in-out forwards;
+    animation: tracking-in-contract 3s ease-in-out forwards;
 }
 
 a {
@@ -97,9 +97,14 @@ a {
     }
 
     40% {
+        opacity: 0.4;
+    }
+    60%{
         opacity: 0.6;
     }
-
+    80%{
+        opacity: 0.8;
+    }
     100% {
         letter-spacing: normal;
         opacity: 1;
