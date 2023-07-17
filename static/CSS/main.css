@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    font-family: 'Satisfy', cursive;
+    /* font-family: 'Satisfy', cursive; */
     color: black;
 }
 
@@ -41,7 +41,11 @@ a.nav-link {
     border-radius: 21px 21px 0 0;
     
 }
+#Cards{
 
+    margin: 10px;
+
+}
 
 /* Text animations */
 .tracking-in-expand {

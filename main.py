@@ -1,9 +1,12 @@
 from flask import Flask, render_template
-import requests as Req
+import requests as REQ
+
+
+
 
 
 app = Flask(__name__)
-api = Req.get("https://api.npoint.io/a790dc67973030cc7f94").json()
+api = REQ.get("https://api.npoint.io/a790dc67973030cc7f94").json
 
 
 @app.route('/')
@@ -12,7 +15,7 @@ def home():
 
 @app.route('/Qualification')
 def content():
-    return render_template("content.html", api=api)
+        return render_template("content.html", api=api)
 
 @app.route('/Contact')
 def contact():
