@@ -20,8 +20,6 @@ a.nav-link {
     font-family: 'Merriweather', serif;
     font-weight: 600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    ;
-
 }
 
 .pfp {
@@ -46,7 +44,43 @@ a.nav-link {
     margin: 10px;
 
 }
-
+#Form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 450px;
+    margin: 2vw 4vw;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 21px;
+}
+input{
+    padding: 2vw 4vw;
+    height: 2vw;
+    border: none;
+    border-radius: 21px;
+    margin: 20px;
+    display: flex;
+}
+textarea{
+    margin: 25px;
+    padding: 2vw;
+    border: none;
+    border-radius: 21px;
+    display: flex;
+}
+label{
+    margin:20px;
+}
 /* Text animations */
 .tracking-in-expand {
     animation-delay: 2s;
@@ -118,3 +152,18 @@ a.nav-link {
         opacity: 1
     }
 }
+
+/* background animation */
+
+.bg-pan-left {
+	animation: bg-pan-left 8s ease-in alternate-reverse both;
+}
+
+@keyframes bg-pan-left {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

@@ -1,14 +1,15 @@
 {% include "header.html" %}
 
-<div id="Form">
-    
-    <form action="contact" method="post">
-        <label>
-            Get in Touch
-        </label>
-        <br>
-        <input class="mt-2" type="text" placeholder="Name">
+<div id="Form" class="container mt-5">
 
+    <form>
+        <label>
+            <h1><b>Get in Touch</b></h1>
+        </label>
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email" name="email" required>
+        <input type="tel" placeholder="Contact Number" name="contact" required>
+        <textarea name="message" id="message" rows="8" placeholder="What's on your mind" required></textarea>
     </form>
 
 </div>
