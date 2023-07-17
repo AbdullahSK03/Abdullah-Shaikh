@@ -14,7 +14,7 @@ def home():
 def content():
     return render_template("content.html", api=api)
 
-@app.route('/contact')
+@app.route('/Contact')
 def contact():
     return render_template("contact.html")
 

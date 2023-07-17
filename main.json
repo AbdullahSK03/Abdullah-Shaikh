@@ -1,0 +1,17 @@
+[
+    {
+        "h": "Internet Of Things",
+        "p": "Worked and Studied with IoT boards as a field of interest",
+        "id": 1
+    },
+    {
+        "h": "Web Developer",
+        "p": "I am a certified web developer with good understanding of HTML5, CSS3, JavaScript also learning NodeJs",
+        "id": 2
+    },
+    {
+        "h": "Python",
+        "p": "Python Programming language is one of programimng language which I have excellent command on. I have also worked with libraries Tkinter, Pandas, Flask, openCV, etc.",
+        "id": 3
+    }
+]
