@@ -23,7 +23,7 @@ def home():
 
 @app.route('/Qualification')
 def content():
-        return render_template("content.html", api=api)
+        return render_template("content.html")
 
 @app.route('/Contact')
 def contact():
