@@ -1,18 +1,21 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+import requests as REQ
 
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:@localhost/portfolio_web"
-db = SQLAlchemy(app)
+# app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:@localhost/portfolio_web"
+# db = SQLAlchemy(app)
+
+# class Data(db.Model):
+#     id = db.srno(db.Integer, primary_key=True)
+#     img = db.p(db.St(100), nullable=False)
+#     h = db.h(db.String(100), nullable=False)
+#     p = db.image(db.String(100), nullable=False)
 
 
-class Data(db.Model):
-    id = db.srno(db.Integer, primary_key=True)
-    img = db.p(db.St(100), nullable=False)
-    h = db.h(db.String(100), nullable=False)
-    p = db.image(db.String(100), nullable=False)
+
 
 @app.route('/')
 def home():
