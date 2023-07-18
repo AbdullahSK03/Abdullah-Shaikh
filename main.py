@@ -1,13 +1,18 @@
 from flask import Flask, render_template
-import requests as REQ
-
-
+from flask_sqlalchemy import SQLAlchemy
 
 
 
 app = Flask(__name__)
-api = REQ.get("https://api.npoint.io/a790dc67973030cc7f94").json
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:@localhost/portfolio_web"
+db = SQLAlchemy(app)
 
+
+class Data(db.Model):
+    id = db.srno(db.Integer, primary_key=True)
+    img = db.p(db.St(100), nullable=False)
+    h = db.h(db.String(100), nullable=False)
+    p = db.image(db.String(100), nullable=False)
 
 @app.route('/')
 def home():
