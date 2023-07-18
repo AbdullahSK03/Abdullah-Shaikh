@@ -29,6 +29,9 @@ def content():
 def contact():
     return render_template("contact.html")
 
+@app.route('/Services')
+def services():
+     return render_template("services.html")
 
 if "__main__" == __name__:
     app.run(debug=True)
