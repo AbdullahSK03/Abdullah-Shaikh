@@ -89,27 +89,55 @@ label {
     margin: 20px;
 }
 
+<<<<<<< HEAD
 /* #Contact{
 
 } */
+=======
+.card {
+    width: 100%;
+    height: 500px;
+}
+>>>>>>> 7244b1e99b66a27ff5971e4f464a24d49ae3e43d
 
 .btn {
     width: 90px;
     height: 35px;
     align-self: center;
     margin: 10px;
-    border-radius: 21px ;
+    border-radius: 21px;
 }
 
+#button {
+    width: max-content;
+    padding: max-content;
+}
+.text-bg-primary {
+    background-color: rgba(var(--bs-body-color-rgb), 0.03);
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 2rem;
+}
+#Quote {
+    font-size: 32px;
+    font-family: 'Bona Nova', serif;
+    color: #D4E2D4;
+}
+#right{
+    text-align: right;
+}
 /* Text animations */
 .tracking-in-expand {
     animation-delay: 2s;
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
 .bg-pan-left {
     animation: bg-pan-left 8s ease-in alternate-reverse both;
 }
+
 .puff-in-center {
     animation-delay: 1s;
     animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
