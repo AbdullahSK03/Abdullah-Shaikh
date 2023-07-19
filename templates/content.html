@@ -1,17 +1,5 @@
 {% include "header.html" %}
 
-<div class="container">
 
-  <div id="Cards" class="card" style="width: 18rem;">
-    {%for data in api:%}
-    <img src="../static/images/{{data.img}}" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">{{data.h}}</h5>
-      <p class="card-text">{{data.p}}</p>
-    </div>
-    {%endfor%}
-    <a href="" class="btn btn-primary">View Certificate</a>
-  </div>
 
-</div>
 {% include "footer.html" %}
