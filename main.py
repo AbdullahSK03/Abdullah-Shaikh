@@ -4,8 +4,11 @@ import requests as REQ
 import smtplib
 
 
-
+api = REQ.get("https://api.quotable.io/random").json()
 app = Flask(__name__)
+
+print(api)
+
 
 '''srno, p, h, image'''
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/portfolio_web'
