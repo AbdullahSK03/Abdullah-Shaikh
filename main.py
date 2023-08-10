@@ -4,7 +4,6 @@ from flask import requests as REQ
 import smtplib
 
 
-# api = REQ.get("https://api.quotable.io/random").json()
 app = Flask(__name__)
 connection = smtplib.SMTP('smtp.gmail.com')
 connection.starttls()
@@ -19,16 +18,9 @@ with connection.login('abdhuzyfa@gmail.com', 'zaupklzasocwfvgs') as smtp:
 def home():
     return render_template("index.html")
 
-@app.route('/Qualification', methods=['GET'])
-def content():
-        
-        
-
+@app.route('/Qualification')
+def content():    
         return render_template("content.html")
-
-@app.route('/Contact')
-def contact():
-    return render_template("contact.html")
 
 @app.route('/Services')
 def services():
