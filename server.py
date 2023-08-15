@@ -1,14 +1,20 @@
-from flask import Flask, render_template, request
-# from flask_sqlalchemy import SQLAlchemy
+import pypyodbc as odbc
 
+DRIVER_NAME = 'SQL Server'
+SERVER_NAME = 'Abdullah\SQLEXPRESS'
 
-app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
-# db = SQLAlchemy(app)
+DB_NAME = 'qualification'
 
-@app.route('/content')
-def index():
-    return render_template('content.html')
+# uid=<username>;
+# pwd=<password>;
 
-if __name__ == '__main__':
-    app.run(debug=True)
+conn = f""" 
+DRIVER={{{DRIVER_NAME}}};
+SERVER={SERVER_NAME};
+DATABASE={DB_NAME};
+Trustt_Connection=yes;
+"""
+
+odbc_conn = odbc.connect(conn)
+
+print(odbc_conn)
